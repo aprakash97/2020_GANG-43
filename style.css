@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arvo', serif , 'Poppins';
+	
+	
+
+}
+
+.sort{
+	display: flex;
+	background-color:  red;
+}
+
+.genres{
+	background-color:  #0a0a0a;
+}
+.dropdown-tags{
+	position: relative;
+	max-width: 1000px;
+	left: 100px;
+}
+
+
+.genres{
+	position: relative;
+	
+	
+}
+
+.splash{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+	z-index: 200;
+	color: white;
+	
+}
+
+.display-none{
+	position: fixed;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+	z-index: -10;
+	color: white;
+	transition: all 1s;
+}
+
+.splash img{
+	width: 150px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+@keyframes fadeIn{
+	to{
+		opacity: 1;
+	}
+}
+
+.fade-in{
+	opacity: 0;
+	animation: fadeIn  1s ease-in forwards;
+}
+
+
+.card-text{
+    font-size:14px;
+}
+
+.col{
+    position: relative;
+    top: 50px;
+}
+
+.active-pink-2 input[type=text]:focus:not([readonly]) {
+	border-bottom: 1px solid #f48fb1;
+	box-shadow: 0 1px 0 0 #f48fb1;
+  }
+  .active-pink input[type=text] {
+	border-bottom: 1px solid #f48fb1;
+	box-shadow: 0 1px 0 0 #f48fb1;
+  }
+
+  .card{
+	  overflow: hidden;
+	  transition: all 0.5s ease;
+  }
+
+  .card:hover {
+	transform: scale(1.1);
+  }
+
+  .movie-details{
+	
+	display: flex;
+	justify-content: flex-start;
+
+  }
+ .trailer a{
+	 padding-top: 10px;
+ }
+
+ .nav-link-search{
+	border-bottom: 1px solid red;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	padding: 10px;
+	background-color: transparent;
+	
+	 
+ }
+
+ .page-footer{
+	 background-image: url("Images/theater.jpg");
+	
+	
+ }
+
+ .request_container{
+	 margin: 50px 100px;
+ }
+
+.formStyle { 
+	padding: 20px; 
+	width: 400px; 
+	margin-bottom: 20px; 
+	border-bottom-width: 1px; 
+	border-bottom-style: solid; 
+	border-bottom-color: #ecf0f1; 
+	border-top-style: none; 
+	border-right-style: none; 
+	border-left-style: none; 
+	font-size: 1em;
+	font-weight: 100;
+	color: #ffffff;
+  }
+
+  .request_form{
+	  max-width: 300px;
+  }
