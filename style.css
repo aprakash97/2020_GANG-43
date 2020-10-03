@@ -3,10 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arvo', serif , 'Poppins';
-	
-	
-
 }
+
 
 .sort{
 	display: flex;
@@ -150,3 +148,17 @@
   .request_form{
 	  max-width: 300px;
   }
+
+  #suggested_Card:hover {
+	box-shadow: 0 0 11px rgba(33,33,33,.2); 
+	transform: scale(1.0);
+  }
+
+#suggested_Card{
+	overflow: hidden;
+	transition: all 0.5s ease;
+}
+
+#suggested_Card:hover {
+  transform: scale(1.1);
+}
