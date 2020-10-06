@@ -11,52 +11,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="navigation_bar">
-        <nav class="navbar navbar-expand-lg navbar-light" style=background:rgb(37,37,37)>
-            
-            <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
-    
-              <ul class="navbar-nav mr-auto mt-lg-0">
-                <a class="navbar-brand" href="#">
-                  <img src="Images/icon.jpg" width="30" height="30" alt="" style="margin-left: 10px;">
+  <div class="navigation_bar">
+    <nav class="navbar navbar-expand-lg scrolling-navbar bg-dark">
+        
+        <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+
+          <ul class="navbar-nav mr-auto mt-lg-0">
+            <a class="navbar-brand" href="index.html">
+              <img src="Images/icon.jpg" width="30" height="30" alt="" style="margin-left: 10px;">
+            </a>
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle mx-3 text-light" href="#" id="navbarDropdownMenuLink" style="font-family: Poppins;" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Movies
                 </a>
-                <li class="nav-item active">
-                  <a class="nav-link text-light mx-3" href="index.html" style="font-family: Poppins;" >Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown ">
-                    <a class="nav-link dropdown-toggle mx-3 text-light" href="#" id="navbarDropdownMenuLink" style="font-family: Poppins;" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Movies
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" style="font-family: Poppins;" href="#">Tamil</a>
-                      <a class="dropdown-item" style="font-family: Poppins;" href="#">Telugu</a>
-                      <a class="dropdown-item" style="font-family: Poppins;" href="#">English</a>
-                      <a class="dropdown-item" style="font-family: Poppins;" href="#">Malayalam</a>
-                    </div>
-                  </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-3 text-light" href="latestVideos.html" style="font-family: Poppins;">Movie Request</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-3 text-light" href="#" style="font-family: Poppins;">Review</a>
-                </li>
-                
-              </ul>
-              <input class="nav-link-search mx-3 text-light" placeholder="i'm Looking for..." href="#" style="font-family: Poppins; width: 500px;">
-                  <i class="fa fa-search" aria-hidden="true" style="color: white;"></i>
-              <i class="fa fa-bell" style="padding: 0px 20px 0px 20px; color: #fff;"></i>
-              <img src="Images/dp.jpg" style="width: 50px;">
-              
-                
-              
-              
-              
-              <p class="user" style="font-size: 12px; letter-spacing: 0.1em; font-family: sans-serif; padding: 10px 0px 0px 10px; margin-right: 20px; color: white;">Hello, <br>Abishek Jayapalan</p>
-              
-              
-            </div>
-          </nav>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" style="font-family: Poppins;" href="#">Tamil</a>
+                  <a class="dropdown-item" style="font-family: Poppins;" href="#">Telugu</a>
+                  <a class="dropdown-item" style="font-family: Poppins;" href="#">English</a>
+                  <a class="dropdown-item" style="font-family: Poppins;" href="#">Malayalam</a>
+                </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link mx-3 text-light" href="request.html" style="font-family: Poppins;">Movie Request</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-3 text-light" href="#" style="font-family: Poppins;">Review</a>
+            </li>
+            
+          </ul>
+          
+              <i class="fa fa-search" aria-hidden="true" style="color: white;"></i>
+          <i class="fa fa-bell" style="padding: 0px 20px 0px 20px; color: #fff;"></i>
+          <img src="Images/dp.jpg" style="width: 50px;">
+         
+          
+          <p class="user" style="font-size: 12px; letter-spacing: 0.1em; font-family: sans-serif; padding: 10px 0px 0px 10px; margin-right: 20px; color: white;">Hello, <br>Abishek Jayapalan</p>
+          
+          
         </div>
+      </nav>
+    </div>
+
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Movie Request</a></li>
+          </ol>
+        </nav>
 
         <img src="Images/rajini_banner.jpg" alt="" style="width: 100%;">
 
@@ -167,7 +168,7 @@
             <a href="suggested.html" style="color: white;">Suggested Movies</a>
           </p>
           <p>
-            <a href="#!" style="color: white;">Movie Request</a>
+            <a href="request.html" style="color: white;">Movie Request</a>
           </p>
   
         </div>

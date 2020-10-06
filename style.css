@@ -8,23 +8,11 @@
 
 .sort{
 	display: flex;
-	background-color:  red;
+	background-color:  #a31c1c;
 }
 
 .genres{
 	background-color:  #0a0a0a;
-}
-.dropdown-tags{
-	position: relative;
-	max-width: 1000px;
-	left: 100px;
-}
-
-
-.genres{
-	position: relative;
-	
-	
 }
 
 .splash{
@@ -162,3 +150,4 @@
 #suggested_Card:hover {
   transform: scale(1.1);
 }
+
