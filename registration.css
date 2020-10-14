@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(image/login-background8.jpg);
+    background-size: cover;
+}
+.logo img{
+    width: 200px;
+	position: absolute;
+	top:10%;
+	left: 10%;
+	transform: translate(-50%,-50%);
+}
+.registrationbox{
+    height: 550px;
+    width: 300px;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    top: 15%;
+    left: 35%;
+    position: absolute;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+p{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.registrationbox input{
+    width:100%;
+    margin-bottom: 20px;
+}
+
+.registrationbox input[type=text],input[type=password]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    height: 40px;
+    outline: none;
+    color: #fff;
+
+}
+
+.registrationbox input[type=submit]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: rgb(243, 24, 24);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.link {
+      color:rgb(187, 184, 184);
+      
+}
+
+a:hover {
+    color:rgb(239, 243, 6);
+  }

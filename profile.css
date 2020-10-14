@@ -1,0 +1,50 @@
+
+.bodyprofile{
+    color: white;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+    padding: 0;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)),
+	url('image/b1.jpg');
+    background-size: cover;
+    color: white;
+    height: 650px;
+}
+.prof{  
+    margin-left: 2%;
+}
+
+.bodyprofile img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+
+.information{
+    position: absolute;
+    left: 10%;    
+    width: 50%;
+}
+
+.bodyprofile p{
+    font-size: 15px;
+    
+    
+}
+    
+.edit input[type=submit]{
+    position: absolute;
+    left:0%;
+    background-color:#a31c1c;
+    color: white;
+    border-radius: 20px;
+    height: 40px;
+    width: 150px;
+}
+
+.bodyprofile image-container{
+    position: absolute;
+    left: 55%;
+    width: 400px;
+}

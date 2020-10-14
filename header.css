@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'Arvo', serif , 'Poppins','Noto Sans', sans-serif;
+}
+
+.splash{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+	z-index: 200;
+	color: white;
+	
+}
+
+.display-none{
+	position: fixed;
+	opacity: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+	z-index: -10;
+	color: white;
+	transition: all 1s;
+}
+
+.splash img{
+	width: 150px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+@keyframes fadeIn{
+	to{
+		opacity: 1;
+	}
+}
+
+.fade-in{
+	opacity: 0;
+	animation: fadeIn  1s ease-in forwards;
+}
+
+
+.card-text{
+    font-size:14px;
+}
+
+.col{
+    position: relative;
+    top: 50px;
+}
+
+.active-pink-2 input[type=text]:focus:not([readonly]) {
+	border-bottom: 1px solid #f48fb1;
+	box-shadow: 0 1px 0 0 #f48fb1;
+  }
+  .active-pink input[type=text] {
+	border-bottom: 1px solid #f48fb1;
+	box-shadow: 0 1px 0 0 #f48fb1;
+  }
+
+  .card{
+	  overflow: hidden;
+	  transition: all 0.5s ease;
+  }
+
+  .card:hover {
+	transform: scale(1.1);
+  }
+
+  .movie-details{
+	
+	display: flex;
+	justify-content: flex-start;
+
+  }
+ .trailer a{
+	 padding-top: 10px;
+ }
+
+ .nav-link-search{
+	border-bottom: 1px solid red;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	padding: 10px;
+	background-color: transparent;
+	
+	 
+ }
+
+ .page-footer{
+	 background-image: url("Images/theater.jpg");
+	
+	
+ }
+
+ .request_container{
+	 padding: 50px 100px;
+	 background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)),
+	url('Images/pexels-grace-kusta-nasralla-3866658.jpg');
+		width: 100%;
+		height: 100vh;
+		background-size: cover;
+ }
+
+.formStyle { 
+	padding: 20px; 
+	width: 400px; 
+	margin-bottom: 20px; 
+	border-bottom-width: 1px; 
+	border-bottom-style: solid; 
+	border-bottom-color: #ecf0f1; 
+	border-top-style: none; 
+	border-right-style: none; 
+	border-left-style: none; 
+	font-size: 1em;
+	font-weight: 100;
+	color: #ffffff;
+  }
+
+  .request_form{
+	  max-width: 300px;
+  }
+
+  #suggested_Card:hover {
+	box-shadow: 0 0 11px rgba(33,33,33,.2); 
+	transform: scale(1.0);
+  }
+
+#suggested_Card{
+	overflow: hidden;
+	transition: all 0.5s ease;
+}
+
+#suggested_Card:hover {
+  transform: scale(1.1);
+}
+
+.navigation_bar{
+	background-color: #a31c1c;
+}
+
+.nav-link a:hover{
+	color: yellow;
+}
+
+.searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    padding: 10px;
+    }
+
+    .search_input{
+    color: white;
+	border-bottom: 1px solid red;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	background: none;
+	outline: 0;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.2s linear;
+	}
+	
+	::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+		color: rgb(202, 202, 202);
+	  }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 300px;
+    caret-color:#a31c1c;
+    transition: width 0.3s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: #a31c1c;
+	color: #ffffff;
+	text-decoration: none;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+	}
+	
+	.movie_details{
+		position: absolute;
+	}
+
+	p{
+		color: rgb(255, 255, 255);
+	}
+	
+	/* Container holding the image and the text */
+	.background_img {
+		position: relative;
+		text-align: center;
+		color: white;
+	  }
+	  
+	  /* Top left text */
+	  .details {
+		position: absolute;
+		top: 20%;
+		left: 5%;
+	  }
+	  
+	  .view_btn{
+		  background-color: white;
+		  width: 100px;
+		  padding: 10px;
+		  border: none;
+	  }
+	
+	  .view_btn a{
+		  color : red;
+		  text-decoration: none;
+	  }
+	
+	  .checked {
+		color: orange;
+	  }
+	
+	
+	  .title{
+		  display: flex;
+	  }
+	
+	
+	  #show_bg_2 {
+		background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
+	url('Images/MH.jpg');
+		width: 100%;
+		height: 100vh;
+		background-size: cover;
+	
+	}
+	
+	.movie_description{
+		display: flex;
+	}
+	
+	.desc_p{
+		padding-left: 20px;
+		margin-top: 5px;
+
+	}
+	.explore_btn{
+		background-color: #aa0000; 
+		border: none;
+		color: white;
+		padding: 15px;
+		margin-top: 5px;
+		text-align: center;
+		display: inline-block;
+		font-size: 16px;
+		cursor: pointer;
+
+	}
+
+	.explore_btn :hover{ 
+		text-decoration: none;
+		color: white;	
+	}
+
+	#dropbtn {
+
+		padding: 25px;
+	  }
+	  
+	.dropdown {
+		position: relative;
+		display: inline-block;
+
+	  }
+
+	  .dropdown :hover{
+		  text-decoration: none;
+		  color: #fff;
+	  }
+	  
+	  .dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: rgb(53, 53, 53, 0.9);
+		min-width: 250px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		right: 0;
+	  }
+	  
+	  .dropdown-content a {
+		color: rgb(255, 255, 255);
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	  }
+	  
+	  .dropdown-content a:hover {background-color: #272727;text-decoration: none; color: white;}
+	  
+	  .dropdown:hover .dropdown-content {display: block; text-decoration: none;}
+	  
+	  .dropdown:hover .dropbtn {background-color: #444444;}
+
+	  .image_banner{
+		position: relative;
+	  }
+
+	  .image_banner_text{
+		  position: absolute;
+		  color: #fff;
+		  top: 40%;
+			left: 25%;
+			transform: translate(-50%, -50%);
+
+	  }
+
+	  .image_banner_content_btn{
+		  position: absolute;
+		  cursor: pointer;
+		  background-color: #ba1f29;
+		  padding: 15px 40px;
+		  color: #fff;
+		  border: none;
+
+		  top: 65%;
+			left: 17%;
+			transform: translate(-50%, -50%);
+	  }
+
+	  #image_container_sub{
+		background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),url('Images/pexels.jpg');
+		width: 100%;
+		height: 80vh;
+		background-size: cover;
+
+		/* Create the parallax scrolling effect */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	  }
+
+	  .formStyle {
+		  background-color: transparent;
+			color:#fff;
+	  }
+
+	  select {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		outline: 0;
+		box-shadow: none;
+		border: 0 !important;
+		background-color: transparent;
+		background-image: none;
+	  }
+	  /* Remove IE arrow */
+	  select::-ms-expand {
+		display: none;
+	  }
+	  /* Custom Select */
+	  .select {
+		position: relative;
+		display: flex;
+		margin-top: 20px;
+		width: 25em;
+		height: 3em;
+		line-height: 3;
+		background: #2c2c2c;
+		overflow: hidden;
+
+	  }
+	  select {
+		flex: 1;
+		padding: 0 .5em;
+		color: #fff;
+		cursor: pointer;
+	  }
+	  /* Arrow */
+	  .select::after {
+		content: '\25BC';
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 0 1em;
+		color: #ecf0f1;
+		background: transparent;
+		cursor: pointer;
+		pointer-events: none;
+		-webkit-transition: .25s all ease;
+		-o-transition: .25s all ease;
+		transition: .25s all ease;
+	  }
+
+	  .genre{
+		border-bottom: 0; border-left: 0; border-top: 0; border-right: 0; padding: 10px; width: 100px; text-align: center; background: transparent; color: white;
+	  }
+
+	  .genre a:hover{
+		background: rgba(186, 31, 41, 0.7);
+		color: #fff;
+		text-decoration: none;
+		padding: 10px 10px;
+		border-radius: 15px;
+	  }
+
+	  .image_card :hover {
+		box-shadow: 0 0 11px rgba(33,33,33,.2); 
+		transform: scale(1.0);
+	  }
+
+	  .image_card{
+		overflow: hidden;
+		transition: all 0.5s ease;
+	}
+	
+	.image_card:hover {
+	  transform: scale(1.1);
+	}
+
+
+
+	  
