@@ -12,13 +12,14 @@
 </head>
 <body>
 
-    <!-- <div class="splash">
+  <!-- <div class="splash">
         <img class="fade-in" src="Images/TR Logo only white.png">
     </div>-->
+   
     
 
     <div class="navigation_bar">
-    <nav class="navbar navbar-expand-lg scrolling-navbar bg-dark">
+    <nav class="navbar navbar-expand-lg scrolling-navbar navbar-trans">
         
         <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
 
@@ -41,102 +42,85 @@
               <a class="nav-link mx-3 text-light" href="request.html" style="font-family: Poppins;">Movie Request</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-3 text-light" href="#" style="font-family: Poppins;">Review</a>
+              <a class="nav-link mx-3 text-light" href="suggested.html" style="font-family: Poppins;">Suggestion</a>
             </li>
             
           </ul>
           
+          <div class="searchbar">
+            <input class="search_input" type="text" name="" placeholder="I'm Looking for...">
+            <a href="#" class="search_icon"><i class="fa fa-search"></i></a>
+          </div>
+          <i class="fa fa-bell" style="padding: 0px 20px 0px 10px; color: #fff;"></i>
           
-          <i class="fa fa-bell" style="padding: 0px 20px 0px 20px; color: #fff;"></i>
-          <img src="Images/dp.jpg" style="width: 50px;">
           
-          
-          <p class="user" style="font-size: 12px; letter-spacing: 0.1em; font-family: sans-serif; padding: 10px 0px 0px 10px; margin-right: 20px; color: white;">Hello, <br>Abishek Jayapalan</p>
-          
+
+          <img src="Images/dp.jpg"  width="50px" alt="">
+          <div class="dropdown">
+            <i class="fa fa-caret-down" id="dropbtn" aria-hidden="true" style="color: white;" ></i>
+            <div class="dropdown-content">
+              <a href="#"><i class="fa fa-user" style="margin-right: 20px;"></i> Profile</a>
+              <a href="#"><i class="fa fa-cog" style="margin-right: 20px;"></i>Settings</a>
+              <a href="#"><i class="fa fa-question-circle" style="margin-right: 20px;"></i>Help</a>
+              <a href="#"><i class="fa fa-sign-out" style="margin-right: 20px;"></i>Logout</a>
+            </div>
+          </div>
           
         </div>
       </nav>
     </div>
 
-    <div class="image_container">
-      <img class="la_la" src="Images/inception.jpg" alt="" style="width: 100%; position: relative; ">
-    </div>
-  
 
+    <div class="background_img">
+      <div id='show_bg_2'></div>
+  </div>
 
-      
-    <div class="sort d-flex justify-content-center">
-      
-      <!--Dropdown primary-->
-      <div class="dropdown-tags">
-      <!--Trigger-->
-      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin: 10px; color: rgb(255, 255, 255);">Language</button>
-      <!--Menu-->
-      <div class="dropdown-menu dropdown-primary">
-          <a class="dropdown-item" href="#">Tamil</a>
-          <a class="dropdown-item" href="#">English</a>
-          <a class="dropdown-item" href="#">Telugu</a>
-          <a class="dropdown-item" href="#">Malayalam</a>
-        </div>
+  <div class="details">
+      <div class="title">
+          <p style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 60px; padding-left: 20px;" >Money Heist</p>
+          <div class="stars" style="position: relative; top: 40px; left: 20px;">
+              <span class="fa fa-star checked" style="font-size: 20px; "></span>
+              <span class="fa fa-star checked" style="font-size: 20px; "></span>
+              <span class="fa fa-star checked" style="font-size: 20px; "></span>
+              <span class="fa fa-star " style="font-size: 20px; color:#fff; opacity: 0.3;"></span>
+               <span class="fa fa-star" style="font-size: 20px; color:#fff; opacity: 0.3; "></span>
+          </div>
       </div>
-      <!--Dropdown primary-->
-      
 
-        <!--Dropdown primary-->
-      <div class="dropdown-tags">
-        <!--Trigger-->
-        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin: 10px;color: rgb(255, 255, 255);">Year</button>
-        <!--Menu-->
-        <div class="dropdown-menu dropdown-primary">
-            <a class="dropdown-item" href="#">2020</a>
-            <a class="dropdown-item" href="#">2019</a>
-            <a class="dropdown-item" href="#">2018</a>
-            <a class="dropdown-item" href="#">2017</a>
-          </div>
-        </div>
-        <!--Dropdown primary-->
+      <div class="movie_description" >
+          <p class="desc_p" ><b>2020 </b></p>
+          <p class="desc_p" ><b>2hr 30m</b></p>
+          <p class="desc_p"><b>16+</b></p>
+      </div>   
 
-        <!--Dropdown primary-->
-      <div class="dropdown-tags">
-        <!--Trigger-->
-        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin: 10px;color: rgb(255, 255, 255);">Quality</button>
-        <!--Menu-->
-        <div class="dropdown-menu dropdown-primary">
-            <a class="dropdown-item" href="#">4k</a>
-            <a class="dropdown-item" href="#">1080p</a>
-            <a class="dropdown-item" href="#">720p</a>
-            <a class="dropdown-item" href="#">360p</a>
-          </div>
-        </div>
-        <!--Dropdown primary-->
+      <div class="movie_text">
+          <p style="text-align: left; line-height: 2; font-family: 'Roboto'; font-size: 16px; padding-left: 20px;">Money Heist is a crime drama on Netflix - originally called La Casa de Papel.<br> Eight thieves take hostages and lock themselves in the Royal Mint of Spain as <br>a criminal mastermind manipulates the police to carry out his plan.</p>
+          <a href="#" class="explore_btn" style="margin-left: 20px;">Explore <i class="fa fa-arrow-right"></i></a>
+          <a href="#" style="margin-left: 20px; text-decoration: none; color: white; font-family: 'Roboto';"> Watch Trailer</a>
+      </div>
 
-        <!--Dropdown primary-->
-      <div class="dropdown-tags">
-        <!--Trigger-->
-        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin: 10px;color: rgb(255, 255, 255);">Genre</button>
-        <!--Menu-->
-        <div class="dropdown-menu dropdown-primary">
-            <a class="dropdown-item" href="#">4k</a>
-            <a class="dropdown-item" href="#">1080p</a>
-            <a class="dropdown-item" href="#">720p</a>
-            <a class="dropdown-item" href="#">360p</a>
-          </div>
-        </div>
-        <!--Dropdown primary-->
-
-       
-        </div>
+      <div class="movie_videos" style="display: flex;">
+          <iframe style="padding-left: 20px; position: relative; top: 50px; -webkit-box-shadow: 2px 0px 22px -5px rgba(0,0,0,0.75);
+          -moz-box-shadow: 2px 0px 22px -5px rgba(0,0,0,0.75);
+          box-shadow: 2px 0px 22px -5px rgba(0,0,0,0.75);" width="426" height="240" src="https://www.youtube.com/embed/46cXFUzR9XM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe style="padding-left: 20px; position: relative; top: 50px; -webkit-box-shadow: 2px 0px 22px -5px rgba(0,0,0,0.75);
+          -moz-box-shadow: 2px 0px 22px -5px rgba(0,0,0,0.75);
+          box-shadow: 2px 0px 22px -5px rgba(0,0,0,0.75);" width="426" height="240"  width="1280" height="720" src="https://www.youtube.com/embed/p_PJbmrX4uk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+  </div>
+  
+  <div class="image_banner">
+    <div class="image_banner_content">
+      <h1 class="image_banner_text" style="line-height: 1.5;"><span style="color: #f11e2c;"> Start Downloading </span> <br> movies today with <br> your public library card <br>or university login</h1>
+      <button class="image_banner_content_btn">Get Started</button>
+    </div>
+    
+    <div id="image_container_sub"></div>
+    
+  </div>
 
 
-         
-
-        
-        
-
-      
-
-
-      <div class="row  mx-auto justify-content-center py-5" style="background-image: url(Images/container-background.jpg);" >
+      <div class="row  mx-auto justify-content-center py-5" style="background: rgba(0, 0, 0, 1);" >
 
        
 
@@ -176,7 +160,7 @@
                
               </div>
               <div class="data-container">
-                <p class="card-text " style="color: white;"> A former football player struggles to fulfil his late friend's dreams, and seeks out revenge for his death.</p>
+                <p class="card-text " style="color: white;"> The film is based on life of Air Deccan founder Captain GR Gopinath.</p>
                 <button type="button" class="btn btn-danger btn-sm">View More </button>
                  
               </div>
@@ -189,17 +173,17 @@
       <div class="card shadow mb-3 rounded mx-3 my-3" style="max-width: 540px; background-color: #222222" >
         <div class="row ">
           <div class="inner col-md-4">
-            <img src="Images/Movie Posters/Darbar.jpg" class="card-img" alt="...">
+            <img src="Images/Movie Posters/joker2.jpg" class="card-img" alt="...">
           </div>
           <div class="col-md-8" >
             <div class="card-body">
               <div class="movie-details">
-                <h4 class="card-title" style="color: white;">Darbar </h4>
+                <h4 class="card-title" style="color: white;">Joker </h4>
                 <p class="card-text-details" style="padding: 5px 10px; font-size: 11px; color: #fff;"  >[2020]</p>
              
             </div>
             <div class="data-container">
-              <p class="card-text" style="color: white;"> A former football player struggles to fulfil his late friend's dreams, and seeks out revenge for his death.</p>
+              <p class="card-text" style="color: white;"> Arthur Fleck, a party clown, leads an impoverished life with his ailing mother. However, when society shuns him and brands him as a freak, he decides to embrace the life of crime and chaos</p>
               <button type="button" class="btn btn-danger btn-sm">View More</button>
             </div>
 
@@ -211,17 +195,17 @@
     <div class="card shadow mb-3 rounded mx-3 my-3" style="max-width: 540px; background-color: #222222" >
         <div class="row ">
           <div class="inner col-md-4">
-            <img src="Images/Movie Posters/Darbar.jpg" class="card-img" alt="...">
+            <img src="Images/Movie Posters/2.0.jpg" class="card-img" alt="...">
           </div>
           <div class="col-md-8" >
             <div class="card-body">
               <div class="movie-details">
-                <h4 class="card-title" style="color: white;">Darbar </h4>
-                <p class="card-text-details" style="padding: 5px 10px; font-size: 11px; color: #fff;"  >[2020]</p>
+                <h4 class="card-title" style="color: white;">2.0 </h4>
+                <p class="card-text-details" style="padding: 5px 10px; font-size: 11px; color: #fff;"  >[2018]</p>
              
             </div>
             <div class="data-container">
-              <p class="card-text" style="color: white;"> A former football player struggles to fulfil his late friend's dreams, and seeks out revenge for his death.</p>
+              <p class="card-text" style="color: white;"> Scientists help the government investigate a threat that is beyond understanding..</p>
               <button type="button" class="btn btn-danger btn-sm">View More</button>
             </div>
 
@@ -233,17 +217,17 @@
     <div class="card shadow mb-3 rounded mx-3 my-3" style="max-width: 540px; background-color: #222222" >
         <div class="row ">
           <div class="inner col-md-4">
-            <img src="Images/Movie Posters/Darbar.jpg" class="card-img" alt="...">
+            <img src="Images/Movie Posters/jigarthanda.jpg" class="card-img" alt="...">
           </div>
           <div class="col-md-8" >
             <div class="card-body">
               <div class="movie-details">
-                <h4 class="card-title" style="color: white;">Darbar </h4>
-                <p class="card-text-details" style="padding: 5px 10px; font-size: 11px; color: #fff;"  >[2020]</p>
+                <h4 class="card-title" style="color: white;">Jigarthanda </h4>
+                <p class="card-text-details" style="padding: 5px 10px; font-size: 11px; color: #fff;"  >[2014]</p>
              
             </div>
             <div class="data-container">
-              <p class="card-text" style="color: white;"> A former football player struggles to fulfil his late friend's dreams, and seeks out revenge for his death.</p>
+              <p class="card-text" style="color: white;"> An aspiring director tries his best to make a violent gangster film. His discreet attempts to research a gangster fail miserably. He discovers a mole in the gang and things go out of control for him..</p>
               <button type="button" class="btn btn-danger btn-sm">View More</button>
             </div>
 
@@ -255,17 +239,17 @@
     <div class="card shadow mb-3 rounded mx-3 my-3" style="max-width: 540px; background-color: #222222" >
         <div class="row ">
           <div class="inner col-md-4">
-            <img src="Images/Movie Posters/Darbar.jpg" class="card-img" alt="...">
+            <img src="Images/Movie Posters/kaithi.jpg" class="card-img" alt="...">
           </div>
           <div class="col-md-8" >
             <div class="card-body">
               <div class="movie-details">
-                <h4 class="card-title" style="color: white;">Darbar </h4>
-                <p class="card-text-details" style="padding: 5px 10px; font-size: 11px; color: #fff;"  >[2020]</p>
+                <h4 class="card-title" style="color: white;">Kaithi </h4>
+                <p class="card-text-details" style="padding: 5px 10px; font-size: 11px; color: #fff;">[2020]</p>
              
             </div>
             <div class="data-container">
-              <p class="card-text" style="color: white;"> A former football player struggles to fulfil his late friend's dreams, and seeks out revenge for his death.</p>
+              <p class="card-text" style="color: white;"> A convict serving a life sentence escapes prison but ends up finding he is being pursued by more than just the police.</p>
               <button type="button" class="btn btn-danger btn-sm">View More</button>
             </div>
 
@@ -334,16 +318,16 @@
         <div class="card shadow mb-3 rounded mx-3 my-3" style="max-width: 540px;background-color: #222222">
           <div class="row ">
             <div class="inner col-md-4">
-              <img src="Images/Movie Posters/pattas.jpg" class="card-img" alt="...">
+              <img src="Images/Movie Posters/ok-kanmani-first-look_142424557800.jpg" class="card-img" alt="...">
             </div>
             <div class="col-md-8">
               <div class="card-body">
                 <div class="movie-details">
-                  <h4 class="card-title"style="color: white;">Soorai Potru </h4>
-                  <p class="card-text-details" style="padding: 5px 10px; font-size: 11px;color: #fff;"  >[2020]</p>
+                  <h4 class="card-title"style="color: white;">OK Kanmani </h4>
+                  <p class="card-text-details" style="padding: 5px 10px; font-size: 11px;color: #fff;"  >[2015]</p>
              
               </div>
-                <p class="card-text" style="color: white;">In a Chennai slum, petty thief Sakthi learns an ancient form of martial arts known as the Adimurai. He later accepts a challlenge to participate in a kickboxing tournament.</p>
+                <p class="card-text" style="color: white;">A man falls in love with a girl and soon they move in together. They hate the idea of marriage and cannot decide how to move forward with their relationship.</p>
                 <button type="button" class="btn btn-danger btn-sm">View More</button>
               </div>
             </div>
@@ -353,16 +337,16 @@
       <div class="card shadow mb-3 rounded mx-3 my-3" style="max-width: 540px; background-color: #222222">
         <div class="row ">
           <div class="inner col-md-4">
-            <img src="Images/Movie Posters/pattas.jpg" class="card-img" alt="...">
+            <img src="Images/Movie Posters/Maragadha_Naanayam-684444939-large.jpg" class="card-img" alt="...">
           </div>
           <div class="col-md-8">
             <div class="card-body">
               <div class="movie-details">
-                <h4 class="card-title"style="color: white;">Soorai Potru </h4>
-                <p class="card-text-details" style="padding: 5px 10px; font-size: 11px;color: #fff;"  >[2020]</p>
+                <h4 class="card-title"style="color: white;">Maragatha Nanayam </h4>
+                <p class="card-text-details" style="padding: 5px 10px; font-size: 11px;color: #fff;"  >[2017]</p>
          
             </div>
-              <p class="card-text" style="color: white;">In a Chennai slum, petty thief Sakthi learns an ancient form of martial arts known as the Adimurai. He later accepts a challlenge to participate in a kickboxing tournament.</p>
+              <p class="card-text" style="color: white;">Senguttuvan and Elango are hired by a jewel smuggler to find a cursed treasure responsible for the death of many. Later, with the help of a priest, they summon three spirits to locate the treasure.</p>
               <button type="button" class="btn btn-danger btn-sm">View More</button>
             </div>
           </div>
@@ -372,22 +356,26 @@
     <div class="card shadow mb-3 rounded mx-3 my-3" style="max-width: 540px; background-color: #222222">
             <div class="row ">
               <div class="inner col-md-4">
-                <img src="Images/Movie Posters/pattas.jpg" class="card-img" alt="...">
+                <img src="Images/Movie Posters/anegan.jpg" class="card-img" alt="...">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
                   <div class="movie-details">
-                    <h4 class="card-title"style="color: white;">Soorai Potru </h4>
-                    <p class="card-text-details" style="padding: 5px 10px; font-size: 11px;color: #fff;"  >[2020]</p>
+                    <h4 class="card-title"style="color: white;">Anegan </h4>
+                    <p class="card-text-details" style="padding: 5px 10px; font-size: 11px;color: #fff;"  >[2015]</p>
              
                 </div>
-                  <p class="card-text" style="color: white;">In a Chennai slum, petty thief Sakthi learns an ancient form of martial arts known as the Adimurai. He later accepts a challlenge to participate in a kickboxing tournament.</p>
+                  <p class="card-text" style="color: white;">The struggles and successes of the man with many faces, as he not only traverses physical locations, but travels across lifetimes in search of his goal.</p>
                   <button type="button" class="btn btn-danger btn-sm">View More</button>
                 </div>
               </div>
             </div>
         </div>
+
+        
       </div>
+
+   
 
       
 
