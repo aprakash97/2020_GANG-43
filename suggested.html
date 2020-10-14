@@ -12,57 +12,58 @@
 </head>
 <body>
 
-  <div class="navigation_bar">
-    <nav class="navbar navbar-expand-lg scrolling-navbar navbar-trans">
-        
-        <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+  <nav class="navbar navbar-expand sticky-top navbar-light" id="navigation_bar">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="index.html">
+        <img src="Images/icon.jpg" width="30" height="30" alt="" style="margin-left: 10px;">
+      </a>
+
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar1">
 
           <ul class="navbar-nav mr-auto mt-lg-0">
-            <a class="navbar-brand" href="index.html">
-              <img src="Images/icon.jpg" width="30" height="30" alt="" style="margin-left: 10px;">
-            </a>
             <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle mx-3 text-light" href="#" id="navbarDropdownMenuLink" style="font-family: Poppins;" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Movies
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" style="font-family: Poppins;" href="#">Tamil</a>
-                  <a class="dropdown-item" style="font-family: Poppins;" href="#">Telugu</a>
-                  <a class="dropdown-item" style="font-family: Poppins;" href="#">English</a>
-                  <a class="dropdown-item" style="font-family: Poppins;" href="#">Malayalam</a>
-                </div>
-              </li>
+              <a class="nav-link navbarTogglerDemo01 text-light mx-4" href="request.html" style="font-family: Poppins;">Movie <i class="fa fa-caret-down"  aria-hidden="true" style="color: white; margin-left: 5px;"></i></a>
+                  <div class="dropdown-content" style="left: 0;">
+                    <a href="#">English</a>
+                    <a href="#">Tamil</a>
+                    <a href="#">Hindi</a>
+                    <a href="#">Malayalam</a>
+                  </div>
+            </li>
+            
             <li class="nav-item">
               <a class="nav-link mx-3 text-light" href="request.html" style="font-family: Poppins;">Movie Request</a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link mx-3 text-light" href="suggested.html" style="font-family: Poppins;">Suggestion</a>
             </li>
             
           </ul>
-          
+
           <div class="searchbar">
             <input class="search_input" type="text" name="" placeholder="I'm Looking for...">
             <a href="#" class="search_icon"><i class="fa fa-search"></i></a>
           </div>
           <i class="fa fa-bell" style="padding: 0px 20px 0px 10px; color: #fff;"></i>
-          
-          
-
-          <img src="Images/dp.jpg"  width="50px" alt="">
-          <div class="dropdown">
-            <i class="fa fa-caret-down" id="dropbtn" aria-hidden="true" style="color: white;" ></i>
-            <div class="dropdown-content">
-              <a href="#"><i class="fa fa-user" style="margin-right: 20px;"></i> Profile</a>
-              <a href="#"><i class="fa fa-cog" style="margin-right: 20px;"></i>Settings</a>
-              <a href="#"><i class="fa fa-question-circle" style="margin-right: 20px;"></i>Help</a>
-              <a href="#"><i class="fa fa-sign-out" style="margin-right: 20px;"></i>Logout</a>
-            </div>
-          </div>
-          
         </div>
-      </nav>
+
+        <img src="Images/dp.jpg"  width="50px" alt="">
+        <div class="dropdown">
+          <i class="fa fa-caret-down" id="dropbtn" aria-hidden="true" style="color: white;" ></i>
+          <div class="dropdown-content">
+            <a href="#"><i class="fa fa-user" style="margin-right: 20px;"></i> Profile</a>
+            <a href="#"><i class="fa fa-cog" style="margin-right: 20px;"></i>Settings</a>
+            <a href="#"><i class="fa fa-question-circle" style="margin-right: 20px;"></i>Help</a>
+            <a href="#"><i class="fa fa-sign-out" style="margin-right: 20px;"></i>Logout</a>
+          </div>
+        </div>
     </div>
+</nav>
 
  
      

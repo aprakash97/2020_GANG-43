@@ -11,73 +11,74 @@
     <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="navigation_bar">
-    <nav class="navbar navbar-expand-lg scrolling-navbar navbar-trans">
-        
-        <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+  <nav class="navbar navbar-expand sticky-top navbar-light" id="navigation_bar">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="index.html">
+        <img src="Images/icon.jpg" width="30" height="30" alt="" style="margin-left: 10px;">
+      </a>
+
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar1">
 
           <ul class="navbar-nav mr-auto mt-lg-0">
-            <a class="navbar-brand" href="index.html">
-              <img src="Images/icon.jpg" width="30" height="30" alt="" style="margin-left: 10px;">
-            </a>
             <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle mx-3 text-light" href="#" id="navbarDropdownMenuLink" style="font-family: Poppins;" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Movies
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" style="font-family: Poppins;" href="#">Tamil</a>
-                  <a class="dropdown-item" style="font-family: Poppins;" href="#">Telugu</a>
-                  <a class="dropdown-item" style="font-family: Poppins;" href="#">English</a>
-                  <a class="dropdown-item" style="font-family: Poppins;" href="#">Malayalam</a>
-                </div>
-              </li>
+              <a class="nav-link navbarTogglerDemo01 text-light mx-4" href="request.html" style="font-family: Poppins;">Movie <i class="fa fa-caret-down"  aria-hidden="true" style="color: white; margin-left: 5px;"></i></a>
+                  <div class="dropdown-content" style="left: 0;">
+                    <a href="#">English</a>
+                    <a href="#">Tamil</a>
+                    <a href="#">Hindi</a>
+                    <a href="#">Malayalam</a>
+                  </div>
+            </li>
+            
             <li class="nav-item">
               <a class="nav-link mx-3 text-light" href="request.html" style="font-family: Poppins;">Movie Request</a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link mx-3 text-light" href="suggested.html" style="font-family: Poppins;">Suggestion</a>
             </li>
             
           </ul>
-          
+
           <div class="searchbar">
             <input class="search_input" type="text" name="" placeholder="I'm Looking for...">
             <a href="#" class="search_icon"><i class="fa fa-search"></i></a>
           </div>
           <i class="fa fa-bell" style="padding: 0px 20px 0px 10px; color: #fff;"></i>
-          
-          
-
-          <img src="Images/dp.jpg"  width="50px" alt="">
-          <div class="dropdown">
-            <i class="fa fa-caret-down" id="dropbtn" aria-hidden="true" style="color: white;" ></i>
-            <div class="dropdown-content">
-              <a href="#"><i class="fa fa-user" style="margin-right: 20px;"></i> Profile</a>
-              <a href="#"><i class="fa fa-cog" style="margin-right: 20px;"></i>Settings</a>
-              <a href="#"><i class="fa fa-question-circle" style="margin-right: 20px;"></i>Help</a>
-              <a href="#"><i class="fa fa-sign-out" style="margin-right: 20px;"></i>Logout</a>
-            </div>
-          </div>
-          
         </div>
-      </nav>
+
+        <img src="Images/dp.jpg"  width="50px" alt="">
+        <div class="dropdown">
+          <i class="fa fa-caret-down" id="dropbtn" aria-hidden="true" style="color: white;" ></i>
+          <div class="dropdown-content">
+            <a href="#"><i class="fa fa-user" style="margin-right: 20px;"></i> Profile</a>
+            <a href="#"><i class="fa fa-cog" style="margin-right: 20px;"></i>Settings</a>
+            <a href="#"><i class="fa fa-question-circle" style="margin-right: 20px;"></i>Help</a>
+            <a href="#"><i class="fa fa-sign-out" style="margin-right: 20px;"></i>Logout</a>
+          </div>
+        </div>
     </div>
+</nav>
 
       
 
-        <div class="request_container">
+        <div class="request_container" id="blur">
             <h1 style="color: white;">Request Movies or TV Shows</h1><hr>
             <p style="max-width: 1000px; line-height: 40px;">Have a TV show or movie you'd like to see on Tamil Rockers? Let us know about it below. <br>
                 Wondering why a title is no longer available? Visit <a href="" style="color: tomato;"> Why do TV shows and movies leave Tamil Rockers?</a><br>
                 For help finding a title, visit <a href="" style="color: tomato;"> How do I find TV shows and movies on Tamil Rockers?</a></p>
 
-            <div class="request_form">
+            <div class="request_form" >
                
                     <form action="">
                       <input type="text" class="formStyle" style="color: white;" placeholder="Movie or TV Show" required />
                       
                       <div class="select">
-                        <select name="slct" id="slct">
+                        <select name="slct" id="slct" required>
                           <option selected disabled>Select Language :</option>
                           <option value="1">English</option>
                           <option value="2">Tamil</option>
@@ -88,7 +89,7 @@
                       </div>
 
                       <div class="select">
-                        <select name="slct" id="slct">
+                        <select name="slct" id="slct" required>
                           <option selected disabled>Year of Release :</option>
                           <option value="1">2020</option>
                           <option value="2">2019</option>
@@ -100,8 +101,34 @@
                       </div>
                       
                       <div class="buttons" style="margin-top: 30px;">
-                      <button type="button" class="btn btn-danger">Submit</button>
+                      <button type="button" onclick="toggle()" class="btn btn-danger">Submit</button>
+
+                      <script type="text/javascript">
+                        function toggle(){
+                            var blur = document.getElementById('blur');
+                            blur.classList.toggle('active');
+
+                            var popup = document.getElementById('popup');
+                            popup.classList.toggle('active');
+                        }
+                      </script>
+
+
                       <a href="#" style="margin-left: 20px;  color: tomato;" > I Have a Question</a>
+                   
+                      <div id="popup">
+                        
+                          <img src="Images/popup_img.jpg" class="d-flex justify-content-end" width="600px" style="border-radius: 10px 10px 0 0 ;">
+                        <h2 style="text-align: center; margin: 20px 0px 20px 0px;">Request Added!</h2>
+                        <p style="color: #000; text-align: center;">Your request has been sent successfully! <br> we'll get back to you very soon!</p>
+                        <div class="d-flex justify-content-center">
+                          <a href="#" onclick="toggle()" class="btn btn-danger" style="margin-bottom: 20px;">Okay</a>
+                        </div>
+                        
+                      </div>
+                   
+                   
+                   
                     </div>
                     </form>
 
