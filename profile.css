@@ -36,6 +36,7 @@
 .edit input[type=submit]{
     position: absolute;
     left:0%;
+    border: none;
     background-color:#a31c1c;
     color: white;
     border-radius: 20px;
